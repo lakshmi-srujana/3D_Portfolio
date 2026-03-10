@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lakshmi Srujana - CS student, IEEE leader, builder, and hackathon participant. Explore a 3D portfolio shaped around projects, campus impact, and continuous learning." />
+  <title>Lakshmi Srujana | 3D Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <div class="nav-logo">LS<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#student-life">Student Life</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#hackathons">Hackathons</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">CS Student / IEEE Chair / Campus Builder</div>
+        <div class="hero-kicker reveal">Student portfolio with startup energy, lab curiosity, and community-first leadership.</div>
+        <h1 class="hero-title">
+          <span class="line">Lakshmi</span>
+          <span class="line gradient-text">Srujana</span>
+        </h1>
+        <p class="hero-subtitle">Building tech that feels useful, human, and a little bit futuristic.</p>
+        <div class="hero-cta">
+          <a href="#student-life" class="btn-primary" id="hero-cta-main">See Student Mode</a>
+          <a href="#contact" class="btn-outline">Let's Build Something</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="20">0</span><span>+</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="5">0</span><span>+</span>
+            <span class="stat-label">Hackathons</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="1000">0</span><span>$</span>
+            <span class="stat-label">IEEE Scholarship</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-side reveal">
+        <div class="hero-panels">
+          <article class="hero-panel">
+            <span class="panel-label">Current Focus</span>
+            <p>AI apps, campus communities, and shipping better portfolio-ready builds.</p>
+          </article>
+          <article class="hero-panel">
+            <span class="panel-label">Student Energy</span>
+            <p>Hackathons, speaker sessions, late-night debugging, and turning ideas into demos.</p>
+          </article>
+          <article class="hero-panel">
+            <span class="panel-label">What I Bring</span>
+            <p>Leadership, curiosity, communication, and strong ownership from concept to execution.</p>
+          </article>
+        </div>
+        <div class="hero-mini-board">
+          <span class="board-title">Semester Snapshot</span>
+          <div class="board-row"><span>Building</span><strong>3D web portfolio + AI ideas</strong></div>
+          <div class="board-row"><span>Leading</span><strong>IEEE student initiatives</strong></div>
+          <div class="board-row"><span>Learning</span><strong>Cloud, security, and GenAI</strong></div>
+          <div class="board-row"><span>Chasing</span><strong>Internships and bigger problem statements</strong></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="section-bg-shape"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 / About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card-3d" id="about-card">
+            <div class="profile-ring ring1"></div>
+            <div class="profile-ring ring2"></div>
+            <div class="profile-ring ring3"></div>
+            <div class="profile-avatar">
+              <div class="avatar-initials">LS</div>
+            </div>
+            <div class="floating-badge b1">IEEE Chair</div>
+            <div class="floating-badge b2">Hackathon Mode</div>
+            <div class="floating-badge b3">Campus Builder</div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="about-intro">
+            I'm a <strong>Computer Science student</strong> who likes turning ambition into visible work, whether that means leading an IEEE chapter, building with AI, or showing up at competitions with a fresh idea.
+          </p>
+          <p>
+            As the <strong>Founding Chair of the IEEE SIT-Hyderabad Computer Society Chapter</strong> and an IEEE ComSoc Student Ambassador, I spend a lot of time building spaces where students can learn faster, collaborate better, and feel excited about tech.
+          </p>
+          <p>
+            My interests move across AI, cloud, cybersecurity, hackathons, and social impact, but the theme stays the same: <em>learn deeply, build boldly, and leave a real footprint on campus and beyond.</em>
+          </p>
+          <div class="skill-chips">
+            <span class="chip">Python</span>
+            <span class="chip">Java</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">HTML/CSS</span>
+            <span class="chip">Generative AI</span>
+            <span class="chip">Cloud Computing</span>
+            <span class="chip">Cybersecurity</span>
+            <span class="chip">Data Science</span>
+          </div>
+          <div class="about-metrics reveal">
+            <div class="about-metric">
+              <span class="metric-label">Identity</span>
+              <strong>Student first, builder always</strong>
+            </div>
+            <div class="about-metric">
+              <span class="metric-label">Favorite environments</span>
+              <strong>Hackathons, clubs, speaker rooms, rapid prototypes</strong>
+            </div>
+            <div class="about-metric">
+              <span class="metric-label">Goal</span>
+              <strong>Ship work that makes people stop, explore, and remember</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="student-life" class="section student-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Student Life</span>
+        <h2 class="section-title">The Student POV</h2>
+      </div>
+      <div class="student-grid">
+        <article class="student-card feature reveal">
+          <span class="student-label">Right now</span>
+          <h3>Balancing code, campus leadership, and constant upskilling.</h3>
+          <p>I want this portfolio to feel like a real student control room: ambitious, active, and full of motion instead of a static resume.</p>
+        </article>
+        <article class="student-card reveal">
+          <span class="student-label">Late-night mode</span>
+          <p>Prototypes, design tweaks, learning loops, and one-more-iteration energy.</p>
+        </article>
+        <article class="student-card reveal">
+          <span class="student-label">Campus impact</span>
+          <p>Creating student communities, organizing events, and helping peers find momentum.</p>
+        </article>
+        <article class="student-card reveal">
+          <span class="student-label">Builder stack</span>
+          <p>Web, AI tools, data thinking, communication skills, and execution under pressure.</p>
+        </article>
+      </div>
+      <div class="student-ticker reveal">
+        <span>Learning in public</span>
+        <span>Leading on campus</span>
+        <span>Building with AI</span>
+        <span>Competing in hackathons</span>
+        <span>Designing for impact</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="leadership" class="section dark-section">
+    <canvas class="section-canvas" id="leadership-canvas"></canvas>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 / Leadership</span>
+        <h2 class="section-title">IEEE Leadership</h2>
+      </div>
+      <div class="leadership-grid">
+        <div class="leadership-card featured-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon">&lt;/&gt;</div>
+          <h3>IEEE SIT-Hyderabad Student Branch</h3>
+          <span class="role-badge">Chair</span>
+          <p>Led the student branch from inception, organizing workshops, IEEE Day events, coding competitions, and speaker sessions that made the campus tech culture more active and visible.</p>
+          <div class="card-tags">
+            <span>Community Building</span>
+            <span>Event Management</span>
+            <span>Technical Leadership</span>
+          </div>
+        </div>
+
+        <div class="leadership-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon">[ ]</div>
+          <h3>IEEE Computer Society Chapter</h3>
+          <span class="role-badge">Founding Chair</span>
+          <p>Established the CS Chapter from the ground up, creating a vibrant community for computing enthusiasts and fostering innovation and interdisciplinary collaboration.</p>
+          <div class="card-tags">
+            <span>Founding</span>
+            <span>Innovation</span>
+            <span>Computing</span>
+          </div>
+        </div>
+
+        <div class="leadership-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon">::</div>
+          <h3>IEEE ComSoc Student Ambassador</h3>
+          <span class="role-badge">Ambassador</span>
+          <p>Represented my institution on an international platform, networking with IEEE professionals globally and deepening expertise in communication technologies.</p>
+          <div class="card-tags">
+            <span>Global Outreach</span>
+            <span>Communications</span>
+            <span>Networking</span>
+          </div>
+        </div>
+
+        <div class="leadership-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon">++</div>
+          <h3>Tech Fest - Tech &amp; Hospitality Committee</h3>
+          <span class="role-badge">Head</span>
+          <p>Oversaw planning and execution of technical events, competitions, and speaker sessions at the institute's annual tech fest, balancing logistics, teamwork, and technical quality.</p>
+          <div class="card-tags">
+            <span>Event Planning</span>
+            <span>Operations</span>
+            <span>Leadership</span>
+          </div>
+        </div>
+
+        <div class="leadership-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon">@</div>
+          <h3>TEDx Event - Communications Team</h3>
+          <span class="role-badge">Member</span>
+          <p>Coordinated with speakers and volunteers for the institute's TEDx event, strengthening digital communication, design thinking, and cross-functional collaboration.</p>
+          <div class="card-tags">
+            <span>TEDx</span>
+            <span>Communication</span>
+            <span>Design Thinking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hackathons" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 / Hackathons</span>
+        <h2 class="section-title">Hacking the Problem Space</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal" data-side="left">
+          <div class="timeline-marker">
+            <span class="marker-icon">01</span>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <h3>Smart India Hackathon (SIH)</h3>
+              <span class="tc-badge national">National</span>
+            </div>
+            <p>Selected to represent my institute in the SIH internal rounds and advanced on behalf of the college, proving I can move from idea framing to competitive execution under pressure.</p>
+            <a href="https://drive.google.com/file/d/1Lf7aOL3CWwlpu_O_lvSMNIsZ3Gw5396a/view?usp=drivesdk" target="_blank" class="cert-link">View Certificate</a>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-side="right">
+          <div class="timeline-marker">
+            <span class="marker-icon">02</span>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <h3>Code Quest - Institute Hackathon</h3>
+              <span class="tc-badge winner">Runner-Up + Best Award</span>
+            </div>
+            <p>Secured the <strong>Runner-Up Position</strong> and earned the <strong>Most Transparent Award</strong> for a solution that stood out in both clarity and problem-solving approach.</p>
+            <div class="cert-links">
+              <a href="https://drive.google.com/file/d/1ISRA7FBqsZqJPjOPCYT3QUt87hP_Q63-/view?usp=drivesdk" target="_blank" class="cert-link">Certificate 1</a>
+              <a href="https://drive.google.com/file/d/1xpfha4pEr9GEETxzDcOY4EuQykm-zynP/view?usp=drivesdk" target="_blank" class="cert-link">Certificate 2</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-side="left">
+          <div class="timeline-marker">
+            <span class="marker-icon">03</span>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <h3>Call2Code - Manipal University</h3>
+              <span class="tc-badge inter">Intercollegiate</span>
+            </div>
+            <p>Competed in this intercollegiate hackathon organized by Manipal University, gaining exposure to tougher problem statements, sharper teamwork, and faster iteration.</p>
+            <a href="https://drive.google.com/file/d/1_q1B4Z49I7BDnjArOaqs19bAfOOc0-9-/view?usp=drivesdk" target="_blank" class="cert-link">View Certificate</a>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-side="right">
+          <div class="timeline-marker">
+            <span class="marker-icon">04</span>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <h3>Adobe India Hackathon</h3>
+              <span class="tc-badge industry">Industry</span>
+            </div>
+            <p>Participated in this platform to sharpen creative computing instincts and think more deeply about product quality, digital experience, and innovation at scale.</p>
+            <a href="https://drive.google.com/file/d/18E3dVNOkDDuyY8G_htB0qryRKKe4LuIr/view?usp=drivesdk" target="_blank" class="cert-link">View Certificate</a>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-side="left">
+          <div class="timeline-marker">
+            <span class="marker-icon">05</span>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <h3>IEEE Xtreme 19.0 (2025)</h3>
+              <span class="tc-badge global">Global</span>
+            </div>
+            <p>Collaborated with a team to tackle time-bound algorithmic problems in this global coding competition, testing speed, logic, and consistency against participants worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section dark-section">
+    <canvas class="section-canvas" id="cert-canvas"></canvas>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 / Certifications</span>
+        <h2 class="section-title">Credentials &amp; Learning</h2>
+      </div>
+
+      <div class="cert-categories">
+        <div class="cert-category reveal">
+          <div class="cat-header">
+            <span class="cat-icon">JS</span>
+            <h3>Duke University - Programming Specialization</h3>
+          </div>
+          <div class="cert-list">
+            <a href="https://www.coursera.org/account/accomplishments/certificate/9LPVUSPMDAFN" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Java Programming: Arrays, Lists &amp; Structured Data</span>
+              <span class="ci-arrow">+</span>
+            </a>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/KNPCG7HGJNND" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Java Programming: Solving Problems with Software</span>
+              <span class="ci-arrow">+</span>
+            </a>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/WXP5Z6RYKDMM" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Programming Foundations with JavaScript, HTML &amp; CSS</span>
+              <span class="ci-arrow">+</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="cert-category reveal">
+          <div class="cat-header">
+            <span class="cat-icon">AI</span>
+            <h3>Google Cloud Skills Boost - Generative AI</h3>
+          </div>
+          <div class="cert-list">
+            <a href="https://www.skills.google/public_profiles/1dc2f310-bdcf-4d9a-a2bc-6d57466a0f75/badges/16801580" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Inspect Rich Documents with Gemini Multimodality &amp; RAG</span>
+              <span class="ci-arrow">+</span>
+            </a>
+            <a href="https://www.skills.google/public_profiles/1dc2f310-bdcf-4d9a-a2bc-6d57466a0f75/badges/16381363" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Develop Gen AI Apps with Gemini and Streamlit</span>
+              <span class="ci-arrow">+</span>
+            </a>
+            <a href="https://www.skills.google/public_profiles/1dc2f310-bdcf-4d9a-a2bc-6d57466a0f75/badges/16047645" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Build Real World AI Apps with Gemini and Imagen</span>
+              <span class="ci-arrow">+</span>
+            </a>
+            <a href="https://www.skills.google/public_profiles/1dc2f310-bdcf-4d9a-a2bc-6d57466a0f75/badges/13427690" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Responsible AI: Applying AI Principles with Google Cloud</span>
+              <span class="ci-arrow">+</span>
+            </a>
+            <a href="https://www.skills.google/public_profiles/1dc2f310-bdcf-4d9a-a2bc-6d57466a0f75/badges/13423973" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Prompt Design in Vertex AI</span>
+              <span class="ci-arrow">+</span>
+            </a>
+            <a href="https://www.skills.google/public_profiles/1dc2f310-bdcf-4d9a-a2bc-6d57466a0f75/badges/13422801" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Introduction to Generative AI, Responsible AI &amp; LLMs</span>
+              <span class="ci-arrow">+</span>
+            </a>
+            <span class="cert-item no-link">
+              <span class="ci-dot"></span>
+              <span>Gemini in Google Workspace (Drive, Meet, Sheets, Docs, Gmail)</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="cert-category reveal">
+          <div class="cat-header">
+            <span class="cat-icon">CY</span>
+            <h3>Cybersecurity &amp; AI</h3>
+          </div>
+          <div class="cert-list">
+            <a href="https://drive.google.com/file/d/12ToAVi5dg9dbuh6FmoqIcLgeDfTbWpU1/view?usp=drivesdk" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Introduction to Cybersecurity Awareness - HP LIFE</span>
+              <span class="ci-arrow">+</span>
+            </a>
+            <a href="https://drive.google.com/file/d/18aD7Yl67B0ozH6QUGPu3EC7lHYPGegmj/view?usp=drivesdk" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Cybersecurity Job Simulation - Deloitte</span>
+              <span class="ci-arrow">+</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1sAEvs--5gBx9MNU0Fx885yeWmCQKyZu5/view?usp=drivesdk" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Introduction to Artificial Intelligence - Simplilearn</span>
+              <span class="ci-arrow">+</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1BfNaJLQ6ETqXTVCsAgJGbLyLxeTm6FAz/view?usp=drivesdk" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Introduction to Cloud Computing - Simplilearn</span>
+              <span class="ci-arrow">+</span>
+            </a>
+            <a href="https://drive.google.com/file/d/13Apmg-7ZiMGbBqVY3KxOBrx2Zg7fvZeW/view?usp=drivesdk" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Prompt Engineering Application - Simplilearn</span>
+              <span class="ci-arrow">+</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="cert-category reveal">
+          <div class="cat-header">
+            <span class="cat-icon">DS</span>
+            <h3>Entrepreneurship &amp; Data Science</h3>
+          </div>
+          <div class="cert-list">
+            <a href="https://www.coursera.org/account/accomplishments/certificate/DHT7RR21SYK0" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Entrepreneurship Capstone - University of Maryland</span>
+              <span class="ci-arrow">+</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1ZBwQXjFW3lSz6Hg19VZ0no5uPSnz3T1F/view?usp=drivesdk" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Data Science for Engineers - NPTEL Elite Certificate</span>
+              <span class="ci-arrow">+</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1TlOznj9SGRtt0Nn6poQHTUGE2IwZSuKG/view?usp=drivesdk" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Generative AI for Youth - Koenig</span>
+              <span class="ci-arrow">+</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1JnB7wJ685OQlMqcShWmcrE-L-pfsMUGQ/view?usp=drivesdk" target="_blank" class="cert-item">
+              <span class="ci-dot"></span>
+              <span>Robotics Process Automation Workshop</span>
+              <span class="ci-arrow">+</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="conferences" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 / Conferences</span>
+        <h2 class="section-title">Global Exposure</h2>
+      </div>
+      <div class="conf-grid">
+        <div class="conf-card reveal">
+          <div class="conf-num">01</div>
+          <div class="conf-body">
+            <h3>ICASSP 2025</h3>
+            <p class="conf-sub">International Conference on Acoustics, Speech &amp; Signal Processing</p>
+            <p>Attended one of the premier conferences in signal processing, gaining new perspectives on AI, data science, and research-level problem solving from international experts.</p>
+            <a href="https://drive.google.com/file/d/1bLbjIUvf9ukwf7NSUUAKMLyBex57CqkO/view?usp=drivesdk" target="_blank" class="cert-link">View Certificate</a>
+          </div>
+        </div>
+
+        <div class="conf-card reveal">
+          <div class="conf-num">02</div>
+          <div class="conf-body">
+            <h3>Rise and Rise of Biometric Systems</h3>
+            <p class="conf-sub">IEEE Women in Engineering India Council Webinar</p>
+            <p>Deepened my understanding of biometric technologies and the ethical side of digital security, bridging innovation with responsible implementation.</p>
+            <a href="https://drive.google.com/file/d/1_ftjd52NdsjR0bb3jX-MMsTJU8muU4B6/view?usp=drivesdk" target="_blank" class="cert-link">View Certificate</a>
+          </div>
+        </div>
+
+        <div class="conf-card reveal">
+          <div class="conf-num">03</div>
+          <div class="conf-body">
+            <h3>Tech Fest Speaker Sessions</h3>
+            <p class="conf-sub">Institute Annual Technical Festival</p>
+            <p>As Head of the Technical Committee, organized speaker sessions that connected students with professionals and gave the campus a stronger culture of exposure and curiosity.</p>
+            <a href="https://drive.google.com/file/d/1Y52TcQj1xHsLwuPguTBrmG3BgDO36d1l/view?usp=drivesdk" target="_blank" class="cert-link">View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="awards" class="section dark-section awards-section">
+    <canvas class="section-canvas" id="awards-canvas"></canvas>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">07 / Awards</span>
+        <h2 class="section-title">Recognition &amp; Impact</h2>
+      </div>
+      <div class="awards-grid">
+        <div class="award-card mega-award reveal">
+          <div class="award-glow pulser"></div>
+          <div class="award-inner">
+            <div class="award-trophy">01</div>
+            <h3>IEEE CS Upsilon Pi Epsilon Scholarship</h3>
+            <div class="award-amount">$1,000</div>
+            <p>Awarded a prestigious $1,000 scholarship given to <strong>up to 4 students globally</strong> by the IEEE Computer Society's Upsilon Pi Epsilon honor society, recognizing both academic and leadership excellence.</p>
+            <a href="https://drive.google.com/file/d/1kadJCtSmhz6WZhJ2X-13cXLpP3YItKK3/view?usp=sharing" target="_blank" class="btn-primary sm">View Award</a>
+          </div>
+        </div>
+
+        <div class="award-card reveal">
+          <div class="award-inner">
+            <div class="award-trophy">02</div>
+            <h3>Project Expo - 1st Place</h3>
+            <p>Won <strong>First Place</strong> at the Institute's Project Expo with a prototype designed for farmers, showing how practical student-built technology can support rural communities.</p>
+            <div class="cert-links">
+              <a href="https://drive.google.com/file/d/1bGOY7nb3u_qMLqNlzNaDjreVbHWxoXlW/view?usp=sharing" target="_blank" class="cert-link">Certificate</a>
+              <a href="https://drive.google.com/file/d/1Q-hCw3ov4RBSAMMY7QsxL16v0r8cyqxy/view?usp=sharing" target="_blank" class="cert-link">Photo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="award-card reveal">
+          <div class="award-inner">
+            <div class="award-trophy">03</div>
+            <h3>Muskurahat Foundation - Social Impact Intern</h3>
+            <p>Worked as a Fundraising Intern for a non-profit empowering disadvantaged children. Led digital campaigns, donor outreach, and storytelling efforts with a strong social-impact mindset.</p>
+            <a href="https://drive.google.com/file/d/1PzBabBLznCNvGJ_kiZl2lQNhpv7gF1Sm/view?usp=drivesdk" target="_blank" class="cert-link">View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">08 / Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+      <div class="contact-content">
+        <p class="contact-intro">Interested in collaboration, internships, student communities, or building something interesting together? Let's talk.</p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/lakshmi-srujana-645535312/" target="_blank" class="contact-card" id="contact-linkedin">
+            <span class="cc-icon">01</span>
+            <span class="cc-label">LinkedIn</span>
+            <span class="cc-arrow">+</span>
+          </a>
+          <a href="mailto:pvlsrujana@gmail.com" target="_blank" class="contact-card" id="contact-email">
+            <span class="cc-icon">02</span>
+            <span class="cc-label">Email</span>
+            <span class="cc-arrow">+</span>
+          </a>
+          <a href="https://github.com/lakshmi-srujana" target="_blank" class="contact-card" id="contact-github">
+            <span class="cc-icon">03</span>
+            <span class="cc-label">GitHub</span>
+            <span class="cc-arrow">+</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footer-content">
+      <div class="footer-logo">LS<span class="dot">.</span></div>
+      <p class="footer-tagline">Built from a student mindset: curious, fast-moving, and intentional.</p>
+    </div>
+    <div class="footer-glow"></div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
